@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F06F99318BD2E86003B9B87 /* Cats.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99218BD2E86003B9B87 /* Cats.plist */; };
+		0F06F99F18BD3880003B9B87 /* Bengal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99518BD3880003B9B87 /* Bengal.jpg */; };
+		0F06F9A018BD3880003B9B87 /* Birman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99618BD3880003B9B87 /* Birman.jpg */; };
+		0F06F9A118BD3880003B9B87 /* Bombay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99718BD3880003B9B87 /* Bombay.jpg */; };
+		0F06F9A218BD3880003B9B87 /* Burmese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99818BD3880003B9B87 /* Burmese.jpg */; };
+		0F06F9A318BD3880003B9B87 /* Munchkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99918BD3880003B9B87 /* Munchkin.jpg */; };
+		0F06F9A418BD3880003B9B87 /* Persian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99A18BD3880003B9B87 /* Persian.jpg */; };
+		0F06F9A518BD3880003B9B87 /* Ragdoll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99B18BD3880003B9B87 /* Ragdoll.jpg */; };
+		0F06F9A618BD3880003B9B87 /* Savannah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99C18BD3880003B9B87 /* Savannah.jpg */; };
+		0F06F9A718BD3880003B9B87 /* Siamese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99D18BD3880003B9B87 /* Siamese.jpg */; };
+		0F06F9A818BD3880003B9B87 /* Siberian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99E18BD3880003B9B87 /* Siberian.jpg */; };
 		0FDCE6D918BBD226003E9B02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCE6D818BBD226003E9B02 /* Foundation.framework */; };
 		0FDCE6DB18BBD226003E9B02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCE6DA18BBD226003E9B02 /* CoreGraphics.framework */; };
 		0FDCE6DD18BBD226003E9B02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCE6DC18BBD226003E9B02 /* UIKit.framework */; };
@@ -39,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F06F99218BD2E86003B9B87 /* Cats.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cats.plist; sourceTree = "<group>"; };
+		0F06F99518BD3880003B9B87 /* Bengal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bengal.jpg; sourceTree = "<group>"; };
+		0F06F99618BD3880003B9B87 /* Birman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Birman.jpg; sourceTree = "<group>"; };
+		0F06F99718BD3880003B9B87 /* Bombay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bombay.jpg; sourceTree = "<group>"; };
+		0F06F99818BD3880003B9B87 /* Burmese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Burmese.jpg; sourceTree = "<group>"; };
+		0F06F99918BD3880003B9B87 /* Munchkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Munchkin.jpg; sourceTree = "<group>"; };
+		0F06F99A18BD3880003B9B87 /* Persian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Persian.jpg; sourceTree = "<group>"; };
+		0F06F99B18BD3880003B9B87 /* Ragdoll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ragdoll.jpg; sourceTree = "<group>"; };
+		0F06F99C18BD3880003B9B87 /* Savannah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Savannah.jpg; sourceTree = "<group>"; };
+		0F06F99D18BD3880003B9B87 /* Siamese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Siamese.jpg; sourceTree = "<group>"; };
+		0F06F99E18BD3880003B9B87 /* Siberian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Siberian.jpg; sourceTree = "<group>"; };
 		0FDCE6D518BBD226003E9B02 /* Hello Mo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Mo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDCE6D818BBD226003E9B02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0FDCE6DA18BBD226003E9B02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F06F99418BD3880003B9B87 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0F06F99518BD3880003B9B87 /* Bengal.jpg */,
+				0F06F99618BD3880003B9B87 /* Birman.jpg */,
+				0F06F99718BD3880003B9B87 /* Bombay.jpg */,
+				0F06F99818BD3880003B9B87 /* Burmese.jpg */,
+				0F06F99918BD3880003B9B87 /* Munchkin.jpg */,
+				0F06F99A18BD3880003B9B87 /* Persian.jpg */,
+				0F06F99B18BD3880003B9B87 /* Ragdoll.jpg */,
+				0F06F99C18BD3880003B9B87 /* Savannah.jpg */,
+				0F06F99D18BD3880003B9B87 /* Siamese.jpg */,
+				0F06F99E18BD3880003B9B87 /* Siberian.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		0FDCE6CC18BBD226003E9B02 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +174,7 @@
 				0FDCE6F918BBD226003E9B02 /* MODetailViewController.m */,
 				0FDCE6FB18BBD226003E9B02 /* Images.xcassets */,
 				0FDCE6F218BBD226003E9B02 /* Hello_Mo.xcdatamodeld */,
+				0F06F99418BD3880003B9B87 /* images */,
 				0FDCE6E118BBD226003E9B02 /* Supporting Files */,
 			);
 			path = "Hello Mo";
@@ -147,6 +187,7 @@
 				0FDCE6E318BBD226003E9B02 /* InfoPlist.strings */,
 				0FDCE6E618BBD226003E9B02 /* main.m */,
 				0FDCE6E818BBD226003E9B02 /* Hello Mo-Prefix.pch */,
+				0F06F99218BD2E86003B9B87 /* Cats.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,8 +289,19 @@
 			files = (
 				0FDCE6F118BBD226003E9B02 /* Main_iPad.storyboard in Resources */,
 				0FDCE6FC18BBD226003E9B02 /* Images.xcassets in Resources */,
+				0F06F9A218BD3880003B9B87 /* Burmese.jpg in Resources */,
+				0F06F9A718BD3880003B9B87 /* Siamese.jpg in Resources */,
+				0F06F99F18BD3880003B9B87 /* Bengal.jpg in Resources */,
+				0F06F9A418BD3880003B9B87 /* Persian.jpg in Resources */,
+				0F06F9A318BD3880003B9B87 /* Munchkin.jpg in Resources */,
+				0F06F9A118BD3880003B9B87 /* Bombay.jpg in Resources */,
+				0F06F9A518BD3880003B9B87 /* Ragdoll.jpg in Resources */,
+				0F06F9A018BD3880003B9B87 /* Birman.jpg in Resources */,
+				0F06F9A818BD3880003B9B87 /* Siberian.jpg in Resources */,
+				0F06F99318BD2E86003B9B87 /* Cats.plist in Resources */,
 				0FDCE6EE18BBD226003E9B02 /* Main_iPhone.storyboard in Resources */,
 				0FDCE6E518BBD226003E9B02 /* InfoPlist.strings in Resources */,
+				0F06F9A618BD3880003B9B87 /* Savannah.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +543,7 @@
 				0FDCE71518BBD226003E9B02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FDCE71618BBD226003E9B02 /* Build configuration list for PBXNativeTarget "Hello MoTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +552,7 @@
 				0FDCE71818BBD226003E9B02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

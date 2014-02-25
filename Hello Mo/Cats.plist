@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cats</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Silvester</string>
+			<key>profile</key>
+			<string>The Persian is a long-haired breed of cat characterized by its round face and shortened muzzle. Its name refers to Persia, the former name of Iran, where similar cats are found</string>
+			<key>type</key>
+			<string>Persian</string>
+			<key>bestFriend</key>
+			<string>Bob</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sam</string>
+			<key>profile</key>
+			<string>The Siamese is one of the first distinctly recognized breeds of Oriental cat. One of several breeds native to Thailand, in the 20th century the Siamese cat became one of the most popular breeds in Europe and North America.</string>
+			<key>type</key>
+			<string>Siamese</string>
+			<key>bestFriend</key>
+			<string>Silvester</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tabby</string>
+			<key>profile</key>
+			<string>The Ragdoll is a cat breed with blue eyes and a distinct colorpoint coat. It is a large and muscular semi-longhair cat with a soft and silky coat.</string>
+			<key>type</key>
+			<string>Ragdoll</string>
+			<key>bestFriend</key>
+			<string>Bob</string>
+			<key>cutenessRating</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Benji</string>
+			<key>profile</key>
+			<string>The Bengal is a hybrid breed of domestic cat. Bengals result from crossing a domestic feline with an Asian leopard cat, Prionailurus bengalensis bengalensis.</string>
+			<key>type</key>
+			<string>Bengal</string>
+			<key>bestFriend</key>
+			<string>Tabby</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Burny</string>
+			<key>profile</key>
+			<string>The Burmese is a breed of domesticated cats split into two subgroups: the American Burmese and the British Burmese. Most modern Burmese are descendants of one female cat called Wong Mau, which was brought from Burma to America in 1930.</string>
+			<key>type</key>
+			<string>Burmese</string>
+			<key>bestFriend</key>
+			<string>Benji</string>
+			<key>cutenessRating</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bonny</string>
+			<key>profile</key>
+			<string>The Birman, also called the &quot;Sacred Cat of Burma&quot;, is a domestic cat breed. It should not be confused with the Burmese, which is a dissimilar breed. The Birman has medium-long hair, a pale colored body with darker points and deep blue eyes.</string>
+			<key>type</key>
+			<string>Birman</string>
+			<key>bestFriend</key>
+			<string>Tabby</string>
+			<key>cutenessRating</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sarah</string>
+			<key>profile</key>
+			<string>The Savannah is a domestic hybrid cat breed. It is a cross between a serval and a domestic cat.</string>
+			<key>type</key>
+			<string>Savannah</string>
+			<key>bestFriend</key>
+			<string>Tabby</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Munchkin</string>
+			<key>profile</key>
+			<string>The Munchkin is a relatively new breed of cat characterized by its very short legs, which are caused by a naturally occurring genetic mutation.</string>
+			<key>type</key>
+			<string>Munchkin</string>
+			<key>bestFriend</key>
+			<string>Bob</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shabby</string>
+			<key>profile</key>
+			<string>The Siberian is a domestic cat breed that has been present in Russia for centuries. A longer name of the breed is Siberian Forest Cat, but it is usually referred to as the Siberian or the Siberian cat.</string>
+			<key>type</key>
+			<string>Siberian</string>
+			<key>bestFriend</key>
+			<string>Benji</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bob</string>
+			<key>profile</key>
+			<string>Bombay are a type of domestic shorthaired cats developed by breeding sable Burmese and black American Shorthair cats to produce a cat of mostly Burmese type, but with a sleek, tight black coat.</string>
+			<key>type</key>
+			<string>Bombay</string>
+			<key>bestFriend</key>
+			<string>Bob</string>
+			<key>cutenessRating</key>
+			<integer>5</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
