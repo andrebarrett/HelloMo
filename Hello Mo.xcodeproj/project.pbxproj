@@ -18,6 +18,8 @@
 		0F06F9A618BD3880003B9B87 /* Savannah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99C18BD3880003B9B87 /* Savannah.jpg */; };
 		0F06F9A718BD3880003B9B87 /* Siamese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99D18BD3880003B9B87 /* Siamese.jpg */; };
 		0F06F9A818BD3880003B9B87 /* Siberian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F06F99E18BD3880003B9B87 /* Siberian.jpg */; };
+		0F06F9D118BD5A40003B9B87 /* _Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F06F9CE18BD5A40003B9B87 /* _Cat.m */; };
+		0F06F9D218BD5A40003B9B87 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F06F9D018BD5A40003B9B87 /* Cat.m */; };
 		0FDCE6D918BBD226003E9B02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCE6D818BBD226003E9B02 /* Foundation.framework */; };
 		0FDCE6DB18BBD226003E9B02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCE6DA18BBD226003E9B02 /* CoreGraphics.framework */; };
 		0FDCE6DD18BBD226003E9B02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDCE6DC18BBD226003E9B02 /* UIKit.framework */; };
@@ -61,6 +63,10 @@
 		0F06F99C18BD3880003B9B87 /* Savannah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Savannah.jpg; sourceTree = "<group>"; };
 		0F06F99D18BD3880003B9B87 /* Siamese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Siamese.jpg; sourceTree = "<group>"; };
 		0F06F99E18BD3880003B9B87 /* Siberian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Siberian.jpg; sourceTree = "<group>"; };
+		0F06F9CD18BD5A40003B9B87 /* _Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Cat.h; sourceTree = "<group>"; };
+		0F06F9CE18BD5A40003B9B87 /* _Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Cat.m; sourceTree = "<group>"; };
+		0F06F9CF18BD5A40003B9B87 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		0F06F9D018BD5A40003B9B87 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		0FDCE6D518BBD226003E9B02 /* Hello Mo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Mo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDCE6D818BBD226003E9B02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0FDCE6DA18BBD226003E9B02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +136,17 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		0F06F9CC18BD5A40003B9B87 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0F06F9CD18BD5A40003B9B87 /* _Cat.h */,
+				0F06F9CE18BD5A40003B9B87 /* _Cat.m */,
+				0F06F9CF18BD5A40003B9B87 /* Cat.h */,
+				0F06F9D018BD5A40003B9B87 /* Cat.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		0FDCE6CC18BBD226003E9B02 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +181,7 @@
 		0FDCE6E018BBD226003E9B02 /* Hello Mo */ = {
 			isa = PBXGroup;
 			children = (
+				0F06F9CC18BD5A40003B9B87 /* CoreData */,
 				0FDCE6E918BBD226003E9B02 /* MOAppDelegate.h */,
 				0FDCE6EA18BBD226003E9B02 /* MOAppDelegate.m */,
 				0FDCE6EC18BBD226003E9B02 /* Main_iPhone.storyboard */,
@@ -320,7 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F06F9D118BD5A40003B9B87 /* _Cat.m in Sources */,
 				0FDCE6F418BBD226003E9B02 /* Hello_Mo.xcdatamodeld in Sources */,
+				0F06F9D218BD5A40003B9B87 /* Cat.m in Sources */,
 				0FDCE6FA18BBD226003E9B02 /* MODetailViewController.m in Sources */,
 				0FDCE6EB18BBD226003E9B02 /* MOAppDelegate.m in Sources */,
 				0FDCE6F718BBD226003E9B02 /* MOMasterViewController.m in Sources */,
