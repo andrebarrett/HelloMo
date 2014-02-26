@@ -41,6 +41,29 @@
 		0FDCE71018BBD226003E9B02 /* Hello_MoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCE70F18BBD226003E9B02 /* Hello_MoTests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		0F40843D18BE96FE00202193 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.xcdatamodel;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).momd",
+			);
+			script = "mogenerator --model \"${INPUT_FILE_PATH}\" --output-dir \"${PROJECT_DIR}/Hello Mo/CoreData/\" --template-var  arc=true\n${DEVELOPER_BIN_DIR}/momc -XD_MOMC_TARGET_VERSION=10.7 \"${INPUT_FILE_PATH}\" \"${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${INPUT_FILE_BASE}.mom\"\n";
+		};
+		0F40843E18BE97D800202193 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.xcdatamodeld;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).momd",
+			);
+			script = "mogenerator --model \"${INPUT_FILE_PATH}\" --output-dir \"${PROJECT_DIR}/Hello Mo/CoreData/\" --template-var  arc=true\n${DEVELOPER_BIN_DIR}/momc -XD_MOMC_TARGET_VERSION=10.7 \"${INPUT_FILE_PATH}\" \"${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${INPUT_FILE_BASE}.momd\"\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		0FDCE70718BBD226003E9B02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -240,6 +263,8 @@
 				0FDCE6D318BBD226003E9B02 /* Resources */,
 			);
 			buildRules = (
+				0F40843E18BE97D800202193 /* PBXBuildRule */,
+				0F40843D18BE96FE00202193 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
