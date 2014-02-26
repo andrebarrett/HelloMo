@@ -116,6 +116,11 @@ extern const struct CatFetchedProperties {
 
 
 
++ (NSArray*)fetchAllCuteCatsWithRating:(NSManagedObjectContext*)moc_ rating:(NSNumber*)rating_ ;
++ (NSArray*)fetchAllCuteCatsWithRating:(NSManagedObjectContext*)moc_ rating:(NSNumber*)rating_ error:(NSError**)error_;
+
+
+
 
 @end
 

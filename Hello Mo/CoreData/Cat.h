@@ -1,5 +1,7 @@
 #import "_Cat.h"
 
 @interface Cat : _Cat {}
-// Custom logic goes here.
+
++ (NSFetchRequest*)fetchRequestForAllCatsWithRating:(NSNumber*)rating_ inManagedObjectContext:(NSManagedObjectContext*)moc_;
+
 @end

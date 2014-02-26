@@ -130,4 +130,39 @@ const struct CatFetchedProperties CatFetchedProperties = {
 
 
 
++ (NSArray*)fetchAllCuteCatsWithRating:(NSManagedObjectContext*)moc_ rating:(NSNumber*)rating_ {
+	NSError *error = nil;
+	NSArray *result = [self fetchAllCuteCatsWithRating:moc_ rating:rating_ error:&error];
+	if (error) {
+#ifdef NSAppKitVersionNumber10_0
+		[NSApp presentError:error];
+#else
+		NSLog(@"error: %@", error);
+#endif
+	}
+	return result;
+}
++ (NSArray*)fetchAllCuteCatsWithRating:(NSManagedObjectContext*)moc_ rating:(NSNumber*)rating_ error:(NSError**)error_ {
+	NSParameterAssert(moc_);
+	NSError *error = nil;
+
+	NSManagedObjectModel *model = [[moc_ persistentStoreCoordinator] managedObjectModel];
+	
+	NSDictionary *substitutionVariables = [NSDictionary dictionaryWithObjectsAndKeys:
+														
+														rating_, @"rating",
+														
+														nil];
+	
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"allCuteCatsWithRating"
+													 substitutionVariables:substitutionVariables];
+	NSAssert(fetchRequest, @"Can't find fetch request named \"allCuteCatsWithRating\".");
+
+	NSArray *result = [moc_ executeFetchRequest:fetchRequest error:&error];
+	if (error_) *error_ = error;
+	return result;
+}
+
+
+
 @end

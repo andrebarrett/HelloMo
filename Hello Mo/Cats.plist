@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>name</key>
-			<string>Silvester</string>
+			<string>Mo</string>
 			<key>profile</key>
 			<string>The Persian is a long-haired breed of cat characterized by its round face and shortened muzzle. Its name refers to Persia, the former name of Iran, where similar cats are found</string>
 			<key>type</key>
@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sam</string>
+			<string>Gen</string>
 			<key>profile</key>
 			<string>The Siamese is one of the first distinctly recognized breeds of Oriental cat. One of several breeds native to Thailand, in the 20th century the Siamese cat became one of the most popular breeds in Europe and North America.</string>
 			<key>type</key>
@@ -30,7 +30,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tabby</string>
+			<string>Er</string>
 			<key>profile</key>
 			<string>The Ragdoll is a cat breed with blue eyes and a distinct colorpoint coat. It is a large and muscular semi-longhair cat with a soft and silky coat.</string>
 			<key>type</key>
@@ -42,7 +42,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Benji</string>
+			<string>Ator</string>
 			<key>profile</key>
 			<string>The Bengal is a hybrid breed of domestic cat. Bengals result from crossing a domestic feline with an Asian leopard cat, Prionailurus bengalensis bengalensis.</string>
 			<key>type</key>

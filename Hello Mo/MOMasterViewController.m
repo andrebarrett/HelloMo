@@ -14,6 +14,8 @@
 
 NSString *kCatsKey = @"cats";
 
+NSString *kCutestButtonTitle = @"Cutest";
+NSString *kAllButtonTitle = @"All";
 
 static int kCatIndex = 0;
 
@@ -22,6 +24,8 @@ static int kCatIndex = 0;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
 @property (strong, nonatomic) NSArray *catsArray;
+
+@property BOOL cuteMode;
 
 @end
 
@@ -41,7 +45,9 @@ static int kCatIndex = 0;
 {
     [super viewDidLoad];
 	
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithTitle: kCutestButtonTitle style:UIBarButtonItemStylePlain target: self action: @selector(toggleFilter:)];
+    
+    self.navigationItem.leftBarButtonItem = filterButton;
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
@@ -53,7 +59,25 @@ static int kCatIndex = 0;
     self.catsArray = catsDictionary[kCatsKey];
 }
 
-
+- (IBAction)toggleFilter:(id)sender {
+    
+    UIBarButtonItem *button = (UIBarButtonItem*)sender;
+    
+    if (!_cuteMode) {
+        
+        _cuteMode = YES;
+        
+        button.title = kAllButtonTitle;
+        
+    } else {
+        
+        _cuteMode = NO;
+        
+        button.title = kCutestButtonTitle;
+    }
+    
+    [self reloadData];
+}
 
 - (void)insertNewObject:(id)sender
 {
@@ -155,23 +179,32 @@ static int kCatIndex = 0;
         return _fetchedResultsController;
     }
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cat" inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
+    NSFetchRequest *fetchRequest = nil;
+    
+    if(_cuteMode) {
+        
+        fetchRequest = [Cat fetchRequestForAllCatsWithRating:@(5) inManagedObjectContext:self.managedObjectContext];
+    } else {
+        
+        fetchRequest = [[NSFetchRequest alloc] init];
+        // Edit the entity name as appropriate.
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cat" inManagedObjectContext:self.managedObjectContext];
+        [fetchRequest setEntity:entity];
+    }
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"type" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
+    
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
@@ -245,5 +278,14 @@ static int kCatIndex = 0;
     cell.imageView.image = [UIImage imageNamed:cat.image];
 }
 
+
+- (void)reloadData {
+    
+    _fetchedResultsController = nil;
+    
+    [self fetchedResultsController];
+    
+    [self.tableView reloadData];
+}
 
 @end
