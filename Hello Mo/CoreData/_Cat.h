@@ -121,6 +121,11 @@ extern const struct CatFetchedProperties {
 
 
 
++ (id)fetchOneCatNamed:(NSManagedObjectContext*)moc_ name:(NSString*)name_ ;
++ (id)fetchOneCatNamed:(NSManagedObjectContext*)moc_ name:(NSString*)name_ error:(NSError**)error_;
+
+
+
 
 @end
 

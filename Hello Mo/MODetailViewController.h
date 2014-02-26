@@ -11,6 +11,8 @@
 
 @interface MODetailViewController : UIViewController <UISplitViewControllerDelegate>
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property (strong, nonatomic) Cat *detailItem;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -22,6 +24,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *cutenessRating;
 
 @property (weak, nonatomic) IBOutlet UILabel *profileField;
+
+@property (weak, nonatomic) IBOutlet UILabel *bestFriendNameField;
+
+@property (weak, nonatomic) IBOutlet UILabel *bestFriendTypeField;
+
+@property (weak, nonatomic) IBOutlet UIImageView *bestFriendImageView;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *profileFieldHeightConstraint;
 

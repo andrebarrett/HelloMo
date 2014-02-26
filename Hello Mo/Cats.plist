@@ -12,7 +12,7 @@
 			<key>type</key>
 			<string>Persian</string>
 			<key>bestFriend</key>
-			<string>Bob</string>
+			<string>Gen</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>
@@ -24,7 +24,7 @@
 			<key>type</key>
 			<string>Siamese</string>
 			<key>bestFriend</key>
-			<string>Silvester</string>
+			<string>Mo</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>
@@ -36,7 +36,7 @@
 			<key>type</key>
 			<string>Ragdoll</string>
 			<key>bestFriend</key>
-			<string>Bob</string>
+			<string>Gen</string>
 			<key>cutenessRating</key>
 			<integer>4</integer>
 		</dict>
@@ -48,7 +48,7 @@
 			<key>type</key>
 			<string>Bengal</string>
 			<key>bestFriend</key>
-			<string>Tabby</string>
+			<string>Er</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>
@@ -60,7 +60,7 @@
 			<key>type</key>
 			<string>Burmese</string>
 			<key>bestFriend</key>
-			<string>Benji</string>
+			<string>Ator</string>
 			<key>cutenessRating</key>
 			<integer>4</integer>
 		</dict>
@@ -72,7 +72,7 @@
 			<key>type</key>
 			<string>Birman</string>
 			<key>bestFriend</key>
-			<string>Tabby</string>
+			<string>Burney</string>
 			<key>cutenessRating</key>
 			<integer>4</integer>
 		</dict>
@@ -84,7 +84,7 @@
 			<key>type</key>
 			<string>Savannah</string>
 			<key>bestFriend</key>
-			<string>Tabby</string>
+			<string>Bonny</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>
@@ -96,7 +96,7 @@
 			<key>type</key>
 			<string>Munchkin</string>
 			<key>bestFriend</key>
-			<string>Bob</string>
+			<string>Sarah</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>
@@ -108,7 +108,7 @@
 			<key>type</key>
 			<string>Siberian</string>
 			<key>bestFriend</key>
-			<string>Benji</string>
+			<string>Munchkin</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>
@@ -120,7 +120,7 @@
 			<key>type</key>
 			<string>Bombay</string>
 			<key>bestFriend</key>
-			<string>Bob</string>
+			<string>Shabby</string>
 			<key>cutenessRating</key>
 			<integer>5</integer>
 		</dict>

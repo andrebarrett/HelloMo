@@ -165,4 +165,57 @@ const struct CatFetchedProperties CatFetchedProperties = {
 
 
 
++ (id)fetchOneCatNamed:(NSManagedObjectContext*)moc_ name:(NSString*)name_ {
+	NSError *error = nil;
+	id result = [self fetchOneCatNamed:moc_ name:name_ error:&error];
+	if (error) {
+#ifdef NSAppKitVersionNumber10_0
+		[NSApp presentError:error];
+#else
+		NSLog(@"error: %@", error);
+#endif
+	}
+	return result;
+}
++ (id)fetchOneCatNamed:(NSManagedObjectContext*)moc_ name:(NSString*)name_ error:(NSError**)error_ {
+	NSParameterAssert(moc_);
+	NSError *error = nil;
+
+	NSManagedObjectModel *model = [[moc_ persistentStoreCoordinator] managedObjectModel];
+	
+	NSDictionary *substitutionVariables = [NSDictionary dictionaryWithObjectsAndKeys:
+														
+														name_, @"name",
+														
+														nil];
+	
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"oneCatNamed"
+													 substitutionVariables:substitutionVariables];
+	NSAssert(fetchRequest, @"Can't find fetch request named \"oneCatNamed\".");
+
+	id result = nil;
+	NSArray *results = [moc_ executeFetchRequest:fetchRequest error:&error];
+
+	if (!error) {
+		switch ([results count]) {
+			case 0:
+				//	Nothing found matching the fetch request. That's cool, though: we'll just return nil.
+				break;
+			case 1:
+				result = [results objectAtIndex:0];
+				break;
+			default:
+				NSLog(@"WARN fetch request oneCatNamed: 0 or 1 objects expected, %u found (substitutionVariables:%@, results:%@)",
+					(unsigned)[results count],
+					substitutionVariables,
+					results);
+		}
+	}
+
+	if (error_) *error_ = error;
+	return result;
+}
+
+
+
 @end

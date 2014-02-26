@@ -13,6 +13,7 @@
         <userInfo/>
     </entity>
     <fetchRequest name="allCuteCatsWithRating" entity="Cat" predicateString="cutenessRating == $rating"/>
+    <fetchRequest name="oneCatNamed" entity="Cat" predicateString="name == $name"/>
     <elements>
         <element name="Cat" positionX="0" positionY="0" width="0" height="0"/>
     </elements>

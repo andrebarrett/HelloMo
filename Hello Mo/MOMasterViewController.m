@@ -99,7 +99,7 @@ static int kCatIndex = 0;
     
     kCatIndex++;
     
-    kCatIndex = kCatIndex == self.catsArray.count ? 0 : kCatIndex;
+    kCatIndex = (kCatIndex == self.catsArray.count) ? 0 : kCatIndex;
     
     NSError *error = nil;
     if (![context save:&error]) {
@@ -158,7 +158,9 @@ static int kCatIndex = 0;
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        self.detailViewController.managedObjectContext = self.managedObjectContext;
         self.detailViewController.detailItem = object;
+        
     }
 }
 
@@ -167,7 +169,9 @@ static int kCatIndex = 0;
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
         [[segue destinationViewController] setDetailItem:object];
+        
     }
 }
 

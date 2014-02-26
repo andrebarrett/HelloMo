@@ -47,8 +47,23 @@
         
         self.profileField.text = _detailItem.profile;
         
+        
+        [self configureBestFriendView];
     }
 
+}
+
+
+- (void)configureBestFriendView {
+    
+    Cat *bestFriend = [Cat fetchOneCatNamed:self.managedObjectContext name:self.detailItem.bestFriend];
+    
+    self.bestFriendNameField.text = bestFriend.name;
+    
+    self.bestFriendTypeField.text = bestFriend.type;
+    
+    self.bestFriendImageView.image = [UIImage imageNamed: bestFriend.image];
+    
 }
 
 - (void)viewDidLoad
