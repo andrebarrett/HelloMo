@@ -7,10 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cat.h"
 
 @interface MODetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Cat *detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameField;
+
+@property (weak, nonatomic) IBOutlet UILabel *typeField;
+
+@property (weak, nonatomic) IBOutlet UILabel *cutenessRating;
+
+@property (weak, nonatomic) IBOutlet UILabel *profileField;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *profileFieldHeightConstraint;
+
 @end

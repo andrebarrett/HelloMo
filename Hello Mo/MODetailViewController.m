@@ -36,8 +36,19 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        
+        self.imageView.image = [UIImage imageNamed:_detailItem.image];
+        
+        self.nameField.text = _detailItem.name;
+        
+        self.typeField.text = _detailItem.type;
+        
+        self.cutenessRating.text = [NSString stringWithFormat:@"%d",  _detailItem.cutenessRatingValue];
+        
+        self.profileField.text = _detailItem.profile;
+        
     }
+
 }
 
 - (void)viewDidLoad
@@ -45,6 +56,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    NSDictionary *attributes = @{NSFontAttributeName: self.profileField.font};
+    
+    CGSize size = [_detailItem.profile boundingRectWithSize:CGSizeMake(self.profileField.frame.size.width, MAXFLOAT)
+                                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                                 attributes:attributes
+                                                    context:nil].size;
+    
+    self.profileFieldHeightConstraint.constant = size.height;
 }
 
 - (void)didReceiveMemoryWarning
